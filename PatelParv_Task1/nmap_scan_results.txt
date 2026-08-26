@@ -1,0 +1,71 @@
+========================================
+NMAP NETWORK SCANNING RESULTS
+========================================
+
+Project:
+Basic Network Scanning with Nmap
+
+Task:
+PatelParv_Task1
+
+Target IP:
+192.168.17.128
+
+
+========================================
+1. BASIC NMAP SCAN
+========================================
+
+Command:
+nmap 192.168.17.128
+
+Output:
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-26 00:32 -0400
+Nmap scan report for 192.168.17.128
+Host is up (0.000083s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 4.96 seconds
+
+
+========================================
+OPEN PORT ANALYSIS
+========================================
+
+Port: 80/tcp
+
+Service: HTTP
+
+Purpose:
+Port 80 is commonly used by web servers to provide HTTP web
+services to clients.
+
+Security Risk:
+HTTP does not provide encryption by itself. If sensitive
+information is transmitted over HTTP, it may be exposed to
+network interception. The security of the service also depends
+on the web server software, configuration, and web application
+running on the port.
+
+
+========================================
+BASIC SCAN SUMMARY
+========================================
+
+Target Host:
+192.168.17.128
+
+Host Status:
+Up
+
+Open TCP Ports:
+80/tcp
+
+Detected Service:
+HTTP
+
+Filtered Ports:
+999
