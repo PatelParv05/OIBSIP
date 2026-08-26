@@ -32,40 +32,22 @@ Nmap done: 1 IP address (1 host up) scanned in 4.96 seconds
 
 
 ========================================
-OPEN PORT ANALYSIS
+2. SERVICE VERSION SCAN
 ========================================
 
-Port: 80/tcp
+Command:
+nmap -sV 192.168.17.128
 
-Service: HTTP
+Output:
 
-Purpose:
-Port 80 is commonly used by web servers to provide HTTP web
-services to clients.
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-26 00:34 -0400
+Nmap scan report for 192.168.17.128
+Host is up (0.00011s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
 
-Security Risk:
-HTTP does not provide encryption by itself. If sensitive
-information is transmitted over HTTP, it may be exposed to
-network interception. The security of the service also depends
-on the web server software, configuration, and web application
-running on the port.
+Service detection performed. Please report any incorrect results
+at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.04 seconds
 
-
-========================================
-BASIC SCAN SUMMARY
-========================================
-
-Target Host:
-192.168.17.128
-
-Host Status:
-Up
-
-Open TCP Ports:
-80/tcp
-
-Detected Service:
-HTTP
-
-Filtered Ports:
-999
